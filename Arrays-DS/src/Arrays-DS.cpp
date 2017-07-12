@@ -31,7 +31,7 @@ int main(){
     for(int arr_i = 0;arr_i < n;arr_i++){
        cin >> arr[arr_i];
     }
-    for (int i=n; i>0; i--)
+    for (int i=n-1; i>-1; i--)
     		cout << arr[i] << " ";
     cout << endl;
     return 0;

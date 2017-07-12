@@ -31,8 +31,10 @@ int main(){
     for(int arr_i = 0;arr_i < n;arr_i++){
        cin >> arr[arr_i];
     }
+// My code starts
     for (int i=n-1; i>-1; i--)
     		cout << arr[i] << " ";
     cout << endl;
+//My code ends
     return 0;
 }

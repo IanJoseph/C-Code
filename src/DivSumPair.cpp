@@ -14,8 +14,14 @@
 #include <stdbool.h>
 
 int divisibleSumPairs(int n, int k, int ar_size, int* ar) {
-    int totSumPairs;
-	// Complete this function
+
+	int totSumPairs = 0;
+	for (int i=0; i<ar_size; i++) {
+		for (int j=i+1; j<ar_size; j++) {
+			if ((((ar[i] + ar[j]) % k) == 0) && (i < j))
+				totSumPairs++;
+		}
+	}
 	return totSumPairs;
 }
 

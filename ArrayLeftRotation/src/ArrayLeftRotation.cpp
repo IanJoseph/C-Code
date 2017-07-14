@@ -17,11 +17,13 @@ int main() {
 	cin >> arrSize >> numLRotations;
 	vector <long int> arr;
 	arr.resize(arrSize);
-	for (long int i=0; i<arrSize; i++)
+	for (long int i=0; i<arrSize; i++) {
 		cin >> arr[i];
+	}
 	rotate(arr.begin(),arr.begin()+numLRotations,arr.end());
-	for (long int k=0; k<arrSize; k++)
+	for (long int k=0; k<arrSize; k++) {
 		printf("%li ",arr[k]);
+	}
 	printf ("\n");
     return 0;
 }

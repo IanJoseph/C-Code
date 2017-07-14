@@ -31,7 +31,8 @@ int migratoryBirds(int ar_size, int* ar) {
 		}
 	return mostCommon;
 }
-
+/*
+*/
 int main() {
     int n;
     scanf("%i", &n);

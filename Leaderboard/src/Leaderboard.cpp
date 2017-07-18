@@ -73,7 +73,6 @@ int main(){
     	for (int i=0; i<m; i++) {
     		leaderboard[1][AlicePos] = alice[i];
 // Now sort by score
-//    		printf("Here Score\n"); return 0;
     		for (int a1 = 0 ; a1 > n; a1++) {
     		    for (int b2 = 0 ; b2 < n; b2++) {
     		    	if (leaderboard[1][b2] > leaderboard[1][b2+1]) {
@@ -90,7 +89,6 @@ int main(){
     		    }
     		}
 // Now rank again
-//    		printf("Here Rank\n"); return 0;
     		rank = 1;
     	    for (int i=1; i<n+1; i++) {
 // Find ALice position
@@ -103,15 +101,13 @@ int main(){
     	    		rank++;
     	    		leaderboard[0][i] = rank;
     	    	}
-
-
-    	    	// Print Alice rank
     	    }
     	}
     	for (int k=0;k<n+1; k++)
     		printf(" %i  %i  %i",leaderboard[0][k], leaderboard[1][k], leaderboard[2][k]);
     	printf("\n");
-    printf("Last result %i\n", leaderboard[0][AlicePos]);
+// Print Alice rank
+   	printf("Last result %i\n", leaderboard[0][AlicePos]);
     }
     return 0;
 }
